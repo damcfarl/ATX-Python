@@ -1,0 +1,216 @@
+
+{
+    "totalCount": "1",
+    "imdata": [
+        {
+            "l3extOut": {
+                "attributes": {
+                    "annotation": "",
+                    "descr": "",
+                    "dn": "uni/tn-ATX16/out-out-1",
+                    "enforceRtctrl": "export",
+                    "name": "out-1",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "targetDscp": "unspecified"
+                },
+                "children": [
+                    {
+                        "ospfExtP": {
+                            "attributes": {
+                                "annotation": "",
+                                "areaCost": "1",
+                                "areaCtrl": "redistribute,summary",
+                                "areaId": "0.0.0.1",
+                                "areaType": "nssa",
+                                "descr": "",
+                                "multipodInternal": "no",
+                                "nameAlias": ""
+                            }
+                        }
+                    },
+                    {
+                        "l3extRsEctx": {
+                            "attributes": {
+                                "annotation": "",
+                                "tnFvCtxName": "vrf"
+                            }
+                        }
+                    },
+                    {
+                        "l3extLNodeP": {
+                            "attributes": {
+                                "annotation": "",
+                                "configIssues": "",
+                                "descr": "",
+                                "name": "ospfif-1",
+                                "nameAlias": "",
+                                "ownerKey": "",
+                                "ownerTag": "",
+                                "tag": "yellow-green",
+                                "targetDscp": "unspecified"
+                            },
+                            "children": [
+                                {
+                                    "l3extRsNodeL3OutAtt": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "configIssues": "",
+                                            "rtrId": "23.23.23.23",
+                                            "rtrIdLoopBack": "yes",
+                                            "tDn": "topology/pod-1/node-101"
+                                        }
+                                    }
+                                },
+                                {
+                                    "l3extLIfP": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "descr": "",
+                                            "name": "ospfif-1",
+                                            "nameAlias": "",
+                                            "ownerKey": "",
+                                            "ownerTag": "",
+                                            "prio": "unspecified",
+                                            "tag": "yellow-green"
+                                        },
+                                        "children": [
+                                            {
+                                                "ospfIfP": {
+                                                    "attributes": {
+                                                        "annotation": "",
+                                                        "authKeyId": "1",
+                                                        "authType": "simple",
+                                                        "descr": "",
+                                                        "name": "ospfif-1",
+                                                        "nameAlias": ""
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "ospfRsIfPol": {
+                                                                "attributes": {
+                                                                    "annotation": "",
+                                                                    "tnOspfIfPolName": "myospf-pol"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "l3extRsPathL3OutAtt": {
+                                                    "attributes": {
+                                                        "addr": "1.1.1.2/30",
+                                                        "annotation": "",
+                                                        "autostate": "disabled",
+                                                        "descr": "",
+                                                        "encap": "vlan-1330",
+                                                        "encapScope": "local",
+                                                        "ifInstT": "sub-interface",
+                                                        "ipv6Dad": "enabled",
+                                                        "llAddr": "::",
+                                                        "mac": "00:22:BD:F8:19:FF",
+                                                        "mode": "regular",
+                                                        "mtu": "1500",
+                                                        "tDn": "topology/pod-1/paths-104/pathep-[eth1/41]",
+                                                        "targetDscp": "unspecified"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "l3extRsNdIfPol": {
+                                                    "attributes": {
+                                                        "annotation": "",
+                                                        "tnNdIfPolName": ""
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "l3extRsLIfPCustQosPol": {
+                                                    "attributes": {
+                                                        "annotation": "",
+                                                        "tnQosCustomPolName": ""
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "l3extRsIngressQosDppPol": {
+                                                    "attributes": {
+                                                        "annotation": "",
+                                                        "tnQosDppPolName": ""
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "l3extRsEgressQosDppPol": {
+                                                    "attributes": {
+                                                        "annotation": "",
+                                                        "tnQosDppPolName": ""
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "l3extRsArpIfPol": {
+                                                    "attributes": {
+                                                        "annotation": "",
+                                                        "tnArpIfPolName": ""
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "l3extInstP": {
+                            "attributes": {
+                                "annotation": "",
+                                "descr": "",
+                                "exceptionTag": "",
+                                "floodOnEncap": "disabled",
+                                "matchT": "AtleastOne",
+                                "name": "outepg",
+                                "nameAlias": "",
+                                "prefGrMemb": "exclude",
+                                "prio": "unspecified",
+                                "targetDscp": "unspecified"
+                            },
+                            "children": [
+                                {
+                                    "fvRsProv": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "matchT": "AtleastOne",
+                                            "prio": "unspecified",
+                                            "tnVzBrCPName": "contract-1"
+                                        }
+                                    }
+                                },
+                                {
+                                    "fvRsCustQosPol": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "tnQosCustomPolName": ""
+                                        }
+                                    }
+                                },
+                                {
+                                    "fvRsCons": {
+                                        "attributes": {
+                                            "annotation": "",
+                                            "prio": "unspecified",
+                                            "tnVzBrCPName": "contract-2"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
