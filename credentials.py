@@ -1,3 +1,3 @@
 LOGIN    = "apic:ACI_TOA\\damcfarl"
-PASSWORD = "cisco!123"
-URL      = "https://10.122.143.36"
+PASSWORD = "your_password"
+URL      = "https://your_IP"
